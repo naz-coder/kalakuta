@@ -1,0 +1,728 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+a{
+    color: #262626;
+    text-decoration: none; 
+ }
+ul{
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+/* nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+    justify-content: space-between;
+}
+.main-nav .logo{
+    width: 80px;
+    border-radius: 0.2rem;
+}
+.main-nav ul{
+    display: flex;
+}
+.main-nav ul li{
+    padding: 0 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+.main-nav ul li a:hover{
+    border-bottom: 2px solid #262626;
+}
+
+.menu-btn{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+
+/* Hero section */
+section#hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/hero.jpg");
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section#hero h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 24vw;
+    font-family: "Archivo Narrow", sans-serif;
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Zen Kurenaido", sans-serif;
+}
+
+/* Biography section */
+#biography{
+    margin: 5rem 3rem;
+}
+
+.section-title{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1%;
+}
+
+#biography hr{
+    background-color: #2B0000;
+    border: 1px solid #2B0000;
+    border-radius: 0.5rem;
+    margin-top: 1.35rem;
+    height: 0.2rem;
+    width: 4rem;
+}
+#biography h1{
+    color: #2B0000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: left;
+    /* font-family: 'Righteous', cursive; */
+}
+
+.bio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+
+.bio-container p{
+    text-align: justify;
+    font-size: 1rem;
+    color: #000000;
+
+}
+
+.bio-container button{
+    background-color: transparent;
+    border: 1px solid #2B0000;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: #2B0000;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+.bio-container button:hover{
+    background-color: #2B0000;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.bio-container img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Songs Section */
+#songs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../img/felaSongs.png");
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* width: 100%; */
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 5rem 3rem;
+    color: #ffffff;
+}
+
+.songs-container{
+    margin: 0 4rem;
+    text-align: center;
+}
+
+.songs-container h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 24vw;
+    font-family: "Archivo Narrow", sans-serif;
+    font-family: "Fira Sans", sans-serif;
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Zen Kurenaido", sans-serif;
+}
+
+.songs-container button{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songs-container button:hover{
+    background-color: #2B0000;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.songs-container p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #ffffff;
+
+}
+
+/* Performance section */
+#performance{
+    margin: 5rem 3rem;
+}
+
+#performance.section-title{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1%;
+}
+
+#performance hr{
+    background-color: #2B0000;
+    border: 1px solid #2B0000;
+    border-radius: 0.5rem;
+    margin-top: 1.35rem;
+    height: 0.2rem;
+    width: 4rem;
+}
+#performance h1{
+    color: #2B0000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: left;
+    /* font-family: 'Righteous', cursive; */
+}
+
+.performance-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+
+.performance-container p{
+    text-align: justify;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.performance-span{
+    font-weight: 900;
+}
+
+.performance-container button{
+    background-color: transparent;
+    border: 1px solid #2B0000;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: #2B0000;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+.performance-container button:hover{
+    background-color: #2B0000;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.performance-container video{
+    width: 100%;
+    max-width: 1351px;
+    height: auto;
+}
+
+.show-clip p{
+    font-style: italic;
+    /* font-weight: 800; */
+}
+
+/* Republic section */
+.republic-outter{
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    margin: 2rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#republic{
+    /* background-color: #262626; */
+    margin: 5rem 3rem;
+
+}
+
+.section-title{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 1%;
+}
+
+#republic hr{
+    background-color: #2B0000;
+    border: 1px solid #2B0000;
+    border-radius: 0.5rem;
+    margin-top: 1.35rem;
+    height: 0.2rem;
+    width: 4rem;
+}
+#republic h1{
+    color: #2B0000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: left;
+    /* font-family: 'Righteous', cursive; */
+}
+
+.republic-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+
+.republic-container p{
+    text-align: justify;
+    font-size: 1rem;
+    color: #000000;
+
+}
+
+.republic-container button{
+    background-color: transparent;
+    border: 1px solid #2B0000;
+    border-radius: 0.5rem;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    padding: 0.5rem 2.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    color: #2B0000;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+.republic-container button:hover{
+    background-color: #2B0000;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.republic-container img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.republic-container img.image-1{
+    position: absolute;
+    z-index: 1;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #271616;
+}
+
+.republic-container img.image-2{
+    margin-top: 10%;
+    margin-left: 10%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 0.5rem;
+    box-shadow: 10px 10px 5px #271616;
+}
+
+@media (max-width: 960px) {
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+    .main-nav ul.right-menu{
+        margin-right: 50px;
+    }
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+
+    /* Hero section */
+    section#hero h1{
+        margin: 0 20vw;
+    }   
+
+/* The Republic */
+.republic-container img{
+    max-width: 250px;
+}
+
+.republic-container img.image-2{
+    margin-top: 20%;
+    margin-left: 7%;
+}
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu-btn{
+        display: block;
+    }
+    .menu-btn:hover{
+        opacity: 0.5;
+    }
+    .main-nav ul.right-menu{
+        margin-right: 50px;
+    }
+    .main-nav ul.main-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+
+    /* Hero section */
+    section#hero{
+        height: 70vh;
+    }
+
+    section#hero h1{
+        margin: 0 15vw;
+        line-height: 3.8rem;
+    }
+
+/* Biography section */
+#biography{
+    margin: 10% 4%;
+}
+
+.section-title{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-gap: 1%;
+}
+
+#biography h1{
+    font-size: 2rem;
+
+}
+
+.bio-container{
+    grid-template-columns: 1fr;
+}
+
+.bio-container img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Songs Section */
+#songs {
+    height: 23rem;
+    margin: 18% 4%;
+}
+
+.songs-container{
+    margin: 0 5%;
+}
+
+.songs-container h1{
+    font-size: 2.5rem;
+}
+
+.songs-container p{
+    font-size: 1.2rem;
+}
+
+/* Performance section */
+#performance{
+    margin: 10% 4%;
+}
+
+#performance h1{
+    font-size: 2rem;
+
+}
+
+.performance-container{
+    grid-template-columns: 1fr;
+}
+
+.performance-container img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* Republic section */
+.republic-outter{
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    margin: 2rem 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#republic{
+    margin: 10% 4%;
+}
+
+.section-title{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-gap: 1%;
+}
+
+#republic h1{
+    font-size: 2rem;
+
+}
+
+.republic-container{
+    grid-template-columns: 1fr;
+}
+
+.republic-container img{
+    max-width: 250px;
+}
+
+.republic-container img.image-2{
+    margin-top: 10%;
+    margin-left: 18%;
+}
+
+.republic-content{
+    /* position: absolute; */
+    margin-top: 19rem;
+    display: block;
+}
+}
+
+@media (max-width: 425px) {
+
+/* Biography section */
+.section-title{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    /* display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-gap: 1%; */
+}
+
+hr{
+    margin-top: 0.9rem;
+}
+
+#biography h1{
+    font-size: 1.5rem;
+
+}
+
+.bio-container p{
+    font-size: 0.9rem;
+}
+
+/* Songs Section */
+#songs {
+    height: 22rem;
+}
+
+.songs-container h1{
+    font-size: 2rem;
+}
+
+.songs-container p{
+    font-size: 0.9rem;
+}
+
+/* Performance section */
+#performance h1{
+    font-size: 1.5rem;
+
+}
+
+.performance-container p{
+    font-size: 0.9rem;
+}
+
+/* The republic */
+.republic-outter{
+    padding: 1rem 0.5rem;
+    margin: 2rem 1rem;
+
+}
+
+#republic h1{
+    font-size: 1.3rem;
+}
+
+.republic-container p{
+    font-size: 0.9rem;
+}
+
+.republic-container img{
+    max-width: 180px;
+}
+
+.republic-container img.image-2{
+    margin-top: 10%;
+    margin-left: 18%;
+}
+
+.republic-content{
+    margin-top: 12rem;
+}
+}
