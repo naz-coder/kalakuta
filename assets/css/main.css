@@ -109,6 +109,11 @@ section#hero h1{
     font-family: "Zen Kurenaido", sans-serif;
 }
 
+section#hero p{
+    color: wheat;
+    font-weight: 700;
+    text-align: center;
+}
 /* Biography section */
 #biography{
     margin: 5rem 3rem;
