@@ -6,9 +6,11 @@ document.querySelector('.menu-btn').addEventListener('click', ()=> document.quer
 
 // Picture carousel function
 const imageArray = [
-    'assets/img/biography.jpg',
-    'assets/img/republic1.jpg',
-    'assets/img/songhero.jpeg',
+    'assets/img/gallery1.webp',
+    'assets/img/gallery2.webp',
+    'assets/img/gallery4.jpg',
+    'assets/img/gallery5.webp',
+    'assets/img/stage.jpg'
 ];
 
 let slideIndex = 0;
