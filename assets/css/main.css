@@ -4,6 +4,8 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: peru;
+
 }
 
 *{
@@ -18,7 +20,7 @@ body{
     color: #000;
     font-size: 15px;
     line-height: 1.5;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 a{
     color: #262626;
@@ -125,7 +127,7 @@ section#hero h1{
     font-weight: 900;
     font-size: 3rem;
     text-align: center;
-    margin: 0 24vw;
+    padding: 0 24vw;
     font-family: "Archivo Narrow", sans-serif;
     font-family: "Fira Sans", sans-serif;
     font-family: "Josefin Sans", sans-serif;
@@ -136,7 +138,7 @@ section#hero p{
     color: wheat;
     font-weight: 700;
     text-align: center;
-    margin: 0 24vw;
+    padding: 0 24vw;
 
 }
 
@@ -666,7 +668,7 @@ p.last_p {
 
     /* Hero section */
     section#hero h1{
-        margin: 0 20vw;
+        /* margin: 0 20vw; */
     }   
 
 /* The Republic */
@@ -730,12 +732,12 @@ p.last_p {
     }
 
     section#hero h1{
-        margin: 0 15vw;
+        padding: 0 5rem;
         line-height: 3.8rem;
     }
 
     section#hero p{
-        margin: 0 15vw;
+        padding: 0 5rem;
     }
 
 /* Biography section */
@@ -880,6 +882,21 @@ p.last_p {
 }
 
 @media (max-width: 425px) {
+/* Hero section */
+section#hero{
+    height: 70vh;
+}
+
+section#hero h1{
+    padding: 0 5%;
+    line-height: 3.5rem;
+    font-size: 3rem;
+}
+
+section#hero p{
+    padding: 0 10%;
+}
+
 
 /* Biography section */
 .section-title{
