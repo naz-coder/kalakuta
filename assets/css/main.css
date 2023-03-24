@@ -24,6 +24,15 @@ a{
     color: #262626;
     text-decoration: none; 
  }
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+ }
+
 ul{
     list-style: none;
 }
@@ -159,6 +168,7 @@ section#hero p{
     height: 0.2rem;
     width: 4rem;
 }
+
 #biography h1{
     color: #2B0000;
     text-transform: uppercase;
@@ -208,8 +218,53 @@ section#hero p{
 
 .bio-container img{
     width: 100%;
-    max-width: 600px;
+    max-width: 550px;
     height: auto;
+}
+
+/* Biography Page */
+
+.main-bio-img{
+    animation: slideIn 1s backwards;
+}
+
+@keyframes slideIn {
+    from{transform: translateX(0%);}
+    to{transform: translateX(100%);}
+}
+
+.main-bio-img img{
+    box-shadow: 15px 15px #e06363;
+}
+
+.hide-lg{
+    display: none;
+}
+
+#bio-politics{
+    margin: 5rem 3rem 8rem 3rem;
+    /* padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff;
+    margin: 1rem 2rem 4rem 2rem; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.bio-content-2 h5{
+    /* margin-top: 1rem; */
+    color: #2B0000;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.bio-content-2 p{
+    text-align: justify;
+    font-size: 1rem;
+    color: #000000;
+    /* margin-bottom: 1rem; */
+
 }
 
 /* Songs Section */
@@ -359,10 +414,10 @@ section#hero p{
 
 /* Republic section */
 .republic-outter{
-    padding: 1rem 1rem;
+    padding: 1rem;
     border-radius: 0.5rem;
     border: 1px solid #ffffff;
-    margin: 2rem 2rem;
+    margin: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -689,6 +744,14 @@ p.last_p {
 
 
 @media (max-width: 768px) {
+    header{
+        position: static;
+        top: 0;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+     }
+    
     .menu-btn{
         display: block;
     }
@@ -768,6 +831,43 @@ p.last_p {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+/* Biography Page */
+.main-bio-img{
+    animation: slideIn 1s backwards;
+}
+
+@keyframes slideIn {
+    from{transform: translateY(100%);}
+    to{transform: translateY(0%);}
+}
+
+.main-bio-img img{
+    box-shadow: 10px 10px #e06363;
+    max-width: 670px;
+}
+
+.hide-sm{
+    display: none;
+}
+
+.hide-lg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bio-politics{
+    margin: 13% 4%;
+}
+
+.bio-content-2 h5{
+    font-size: 1.5rem;
+}
+
+.bio-content-2 p{
+    font-size: 1rem;
 }
 
 /* Songs Section */
@@ -916,6 +1016,23 @@ hr{
 }
 
 .bio-container p{
+    font-size: 0.9rem;
+}
+
+/* Biography Page */
+.main-bio-img img{
+    max-width: 370px;
+}
+
+#bio-politics{
+    margin: 17% 4% 20% 4%;
+}
+
+.bio-content-2 h5{
+    font-size: 1.5rem;
+}
+
+.bio-content-2 p{
     font-size: 0.9rem;
 }
 
