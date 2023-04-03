@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
@@ -80,6 +79,9 @@ ul{
     border-bottom: 2px solid #262626;
 }
 
+.main-nav ul .right-menu li a:hover{
+    border-bottom: none;
+}
 .menu-btn{
     cursor: pointer;
     position: absolute;
@@ -113,6 +115,11 @@ ul{
     height: auto;
 }
 
+header img:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    translate: 5s;
+  }
 
 /* Hero section */
 section#hero{
@@ -516,12 +523,13 @@ section#hero p{
     margin: 5rem 0;
     background-color: #d8d5d5;
     background: linear-gradient(#271616, #ffffff);
+    /* test style from here */
+    /* overflow: hidden; */
     /* border-radius: 0 0.5rem 0 0.5rem; */
     /* border: 1px solid #ffffff; */
     /* margin: 2rem 2rem; */
     /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
-
 
 .section-title2 h1{
     text-align: center;
@@ -530,15 +538,7 @@ section#hero p{
     font-weight: 900;
     text-transform: uppercase;
     font-size: 1.5rem;
-    
-
 }
-
-/* .slider-container{
-    width: 100%;
-    display: flex;
-    animation: slides 16s infinite;
-} */
 
 #gallery img{
     width: 100%;
@@ -549,17 +549,47 @@ section#hero p{
     display: block;
 }
 
+
+
 /* @keyframes slides {
-    0%{transform: translateX(0);}
-    15%{transform: translateX(0);}
-    25%{transform: translateX(-100%);}
-    35%{transform: translateX(-100%);}
-    45%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-300%);}
-    75%{transform: translateX(-300%);}
-    85%{transform: translateX(-400%);}
-    100%{transform: translateX(-400%);}
+    0%{
+    transform: translateX(0);
+}
+25%{
+    transform: translateX(0);
+}
+30%{
+    transform: translateX(-100%);
+}
+50%{
+    transform: translateX(-100%);
+}
+55%{
+    transform: translateX(-200%);
+}
+75%{
+    transform: translateX(-200%);
+}
+80%{
+    transform: translateX(-300%);
+}
+100%{
+    transform: translateX(-300%);
+}
+} */
+
+/* .slider-container{
+    width: 100%;
+    display: flex;
+    transform: translateX(-800px);
+    animation-name: slides;
+	animation-duration: 10s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.slider-container:hover{
+    animation-play-state: paused;
 } */
 
 #gallery button{

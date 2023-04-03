@@ -1,0 +1,134 @@
+body{
+    background-color: #f3e7e7;
+}
+
+#search-bar{
+    margin: 7rem 5rem 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar input{
+    width: 25rem;
+    height: 2.8rem;
+    padding: 0 0.5rem;
+    color: #644c4c;
+    font-weight: 700;
+    font-size: 1rem;
+    border: 1px solid #644c4c;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#search-bar input:focus{
+    outline: none;
+    color: #333333;
+    background-color: #f3e7e7;
+}
+
+#song-card{
+    margin: 7rem 3rem 5rem 3rem;
+}
+
+.song-card-flex{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2%;
+}
+
+.card-banner{
+    background-image: url(../assets/img/song-card-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem;
+    padding: 2rem 0 0 0;
+    margin-bottom: 2rem;
+}
+
+.card-content{
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-gap: 2%;
+}
+
+.song-play img{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.more-songs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-songs button{
+    background-color: transparent;
+    background-position: right bottom;
+    transition: all 0.5s ease-in;
+    border: 1px solid #2B0000;
+    color: #2B0000;
+    font-weight: 900;
+    font-size: 0.85rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 4rem;
+    border-radius: 5rem;
+}
+
+.more-songs button:hover{
+    background-color: #2B0000;
+    background-position: left bottom;
+    transition: all 0.5s ease-in;
+    border: 1px solid #2B0000;
+    color: #f3e7e7;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){   
+    #search-bar{
+        margin: 5rem 2rem 5rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #search-bar input{
+        width: 25rem;
+        height: 2.8rem;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
+    #song-card{
+        margin: 5rem 2rem 5rem 2rem;
+    }
+
+    .song-card-flex{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-content{
+        /* grid-template-columns: 1fr; */
+    }
+
+    .more-songs button{
+        margin-top: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 500px){   
+    #song-card{
+        margin: 3rem 1rem 5rem 1rem;
+    }
+    
+    .song-card-flex{
+        grid-template-columns: 1fr;
+    }
+   
+}
