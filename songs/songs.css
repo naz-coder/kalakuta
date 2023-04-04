@@ -125,6 +125,7 @@ body{
     
     .song-card-flex{
         grid-template-columns: 1fr;
+        margin-bottom: 4rem;
     }
    
     /* .card-content{
