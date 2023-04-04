@@ -619,7 +619,6 @@ section#hero p{
     cursor: pointer;
 }
 
-
 /* Footer style */
 .foot {
   text-align: left;
@@ -710,7 +709,12 @@ p.last_p {
 
 
 
-
+@media (min-width: 1441px){
+    .republic-container img.image-2 {
+        margin-top: 4vh;
+        margin-left: 8vw;
+    }
+}
 
 
 @media (max-width: 960px) {

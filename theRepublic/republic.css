@@ -1,0 +1,331 @@
+img:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+#republic-hero{
+    background-image: url(../assets/img/kalakuta-rep.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 1.5rem 0 0 0; */
+    height: 38rem;
+
+}
+
+#republic-body{
+    margin: 7rem 3rem 5rem 3rem;
+}
+
+#the-republic{
+    margin: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+
+.republic-subtitle-sm{
+    display: none;
+}
+
+.republic-subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.republic-subtitle h1, .republic-subtitle-sm h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: #2B0000;
+    line-height: 3.5rem;
+}
+
+#republic-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1%;
+}
+
+.grid-one{
+    display: block;
+}
+
+.grid-one .img-1{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.grid-one .img-2{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+.grid-two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-two .img-3{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    margin-top: -18rem;
+    /* margin-left: 0;
+    margin-right: 0;
+    display: block; */
+}
+
+/* Museum */
+.subtitle-museum h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #2B0000;
+    line-height: 3.5rem;
+    text-align: center;
+}
+
+.description-museum{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4%;
+    margin-bottom: 3rem;
+}
+
+.description-museum img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1224px){
+    #republic-photos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+    
+    .grid-one{
+        display: block;
+    }
+    
+    .grid-one .img-1{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .grid-one .img-2{
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+    
+    .grid-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-two .img-3{
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin-top: -12rem; 
+    }   
+}
+
+@media screen and (max-width: 768px){
+    #republic-hero{
+        height: 27rem;
+    }
+    
+    #republic-body{
+        margin: 7rem 2rem 5rem 2rem;
+    }
+    
+    #the-republic{
+        margin: 5rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5%;
+    }
+    
+    .republic-subtitle h1{
+        font-size: 3rem;
+    }
+    
+    /* Img sections */
+    #republic-photos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+    }
+
+    #republic-photos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+    }
+    
+    .grid-one{
+        display: block;
+    }
+    
+    .grid-one .img-1{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .grid-one .img-2{
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+    
+    .grid-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .grid-two .img-3{
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin-top: 1.5rem; 
+        margin-right: 0;
+        margin-left: 0;
+        display: block;
+
+    }   
+
+    /* Museum */
+.subtitle-museum h1{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.description-museum{
+    grid-template-columns: 1fr;
+    grid-gap: 4%;
+    text-align: center;
+}
+
+.description-museum img{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.description-more p{
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 500px){
+    #republic-hero{
+        height: 20rem;
+    }
+    
+    #republic-body{
+        margin: 7rem 2rem 5rem 2rem;
+    }
+    
+    #the-republic{
+        margin: 5rem 1rem;
+        grid-gap: 2%;
+    }
+    
+    .republic-subtitle h1{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+        /* Img sections */      
+        .grid-one .img-1{
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-right: 0;
+            margin-left: 0;
+            display: block;
+            margin-bottom: 2rem;
+        }
+        
+        .grid-one .img-2{
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-right: 0;
+            margin-left: 0;
+            display: block;
+        }
+        
+        .grid-two{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .grid-two .img-3{
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            margin-top: 1.5rem; 
+            margin-right: 0;
+            margin-left: 0;
+            display: block;
+    
+        }   
+}
+
+@media screen and (max-width: 425px){
+    #republic-hero{
+        height: 20rem;
+    }
+    
+    #republic-body{
+        margin: 7rem 2rem 5rem 2rem;
+    }
+    
+    #the-republic{
+        margin: 5rem 1rem;
+        grid-template-columns: 1fr;
+    }
+    
+    .republic-subtitle{
+        display: none;
+    }
+
+    .republic-subtitle-sm{
+        display: block;
+        text-align: center;
+    }
+
+    .republic-subtitle-sm h1{
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    #the-republic p{
+        text-align: justify;
+    }
+}

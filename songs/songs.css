@@ -112,10 +112,6 @@ body{
         grid-template-columns: 1fr 1fr;
     }
 
-    .card-content{
-        /* grid-template-columns: 1fr; */
-    }
-
     .more-songs button{
         margin-top: 3rem;
     }
@@ -131,4 +127,8 @@ body{
         grid-template-columns: 1fr;
     }
    
+    /* .card-content{
+        grid-template-columns: 1fr;
+    } */
+
 }
