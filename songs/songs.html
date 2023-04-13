@@ -41,7 +41,13 @@
 
     <!-- Search Bar -->
     <section id="search-bar">
-        <input type="search" placeholder="Enter music title or keyword">
+        <input 
+        type="search" 
+        placeholder="Enter music title or keyword"
+        onchange="songSearch()"
+        id="songsOfFela"
+        >
+        <!-- onkeyup="songSearch()" -->
     </section>
 
     <!-- Songs -->
@@ -94,7 +100,7 @@
         <!-- Test Part Start -->
         <div class="song-card-flex">
             <div class="card-banner">
-                <div class="card-content">
+                <div id="cardContent" class="card-content">
                     <div class="song-info">
                         <h3 class="song-title">Title: Shakara</h3>
                         <p class="song-album">Album: Beast of No Nation</p>

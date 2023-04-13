@@ -23,3 +23,40 @@ const slideShow = function () {
 }
 slideShow();
 
+// Songs search function 
+// const songSearch = (e) => {
+//     const results = songdata.filter(data => {
+//         if(e.target.value === " ") return songdata
+//         return data.name.toLowerCase().includes(e.target.value.toLowerCase())
+//     })
+//     SVGMetadataElement({
+//         query: e.target.value,
+//         list: results
+//     })
+// }
+
+const songSearch = () => {
+    var input, filter, div, h3, x, alph, searchValue;
+    input = document.getElementById('songsOfFela');
+    filter = input.value.toUpperCase();
+    div = document.getElementById('cardContent');
+    h3 = document.getElementsByTagName('h3');
+
+    for(x=0; x<h3.length; x++){
+        alph = h3[x].getElementsByTagName("a")[0];
+        searchValue = alph.textContent || alph.innerText;
+        if(searchValue.toLowerCase().indexOf(filter) > -1){
+            h3[x].style.display = " ";
+        }else{
+            h3[x].style.display = "none";
+        }
+    }
+}
+//     const results = songdata.filter(data => {
+//         if(e.target.value === " ") return songdata
+//         return data.name.toLowerCase().includes(e.target.value.toLowerCase())
+//     })
+//     SVGMetadataElement({
+//         query: e.target.value,
+//         list: results
+//     })
