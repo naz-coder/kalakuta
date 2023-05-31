@@ -664,6 +664,11 @@ section#hero p{
   padding: 0 7px 0 7px;
   margin-bottom: 15px;
   padding-top: 1px;
+  color: #ffffff;
+}
+
+.foot_item p:hover {
+    color: #bdc2ca;
 }
 
 p.last_p {
